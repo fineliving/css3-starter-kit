@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hello World</title>
+</head>
+
+<body>
+  <h1>Hello World</h1>
+  <hr>
+  <img src="./liyang.jpg" width="300" height="300" />
+  <style type="text/css">
+    body {
+      /*居中*/
+      text-align: center;
+    }
+
+    img {
+      /*圆角效果*/
+      border-radius: 50%;
+      /*过度：所有属性 0.5s完成*/
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      /*手型*/
+      cursor: pointer;
+    }
+
+    img:hover {
+      /*变形：缩放（1.1倍）*/
+      transform: scale(1.1);
+    }
+  </style>
+</body>
+
+</html>
