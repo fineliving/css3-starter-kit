@@ -1,0 +1,55 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+  <title>中间自适应</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #box {
+      position: relative;
+      width: 100%;
+    }
+
+    #left {
+      background: #CCC;
+      border: 1px solid #666;
+      height: 400px;
+      width: 200px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+
+    #center {
+      background: #CCC;
+      border: 1px solid #666;
+      height: 400px;
+      margin: 0 202px 0;
+    }
+
+    #right {
+      background: #FFE7F4;
+      border: 1px solid #F9B3D5;
+      height: 400px;
+      width: 200px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box">
+    <div id="left">左列</div>
+    <div id="center">中列</div>
+    <div id="right">右列</div>
+  </div>
+</body>
+
+</html>
+这样就没有问题了。
