@@ -24,9 +24,24 @@
 2. 提高网站性能（减少图片请求）
 3. 增加了视觉美观性
 
+
+
+简写写法：
+
 左上角顺时针旋转
 
-x轴y轴
+```css
+border-radius: 100px 100px 0 0;
+```
+
+
+
+x轴y轴写法：
+
+```css
+border-top-left-radius: 100px;
+border-top-right-radius: 100px;
+```
 
 兼容性：
 
