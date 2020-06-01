@@ -1,6 +1,6 @@
 ### AI Design CSS / Sass 指南
 
-*用更合理的方式写 CSS 和 Sass*
+_用更合理的方式写 CSS 和 Sass_
 
 #### 术语
 
@@ -34,7 +34,8 @@
 最后，属性决定了规则声明里被选择的元素将得到何种样式。属性以键值对形式存在，一个规则声明可以包含一或多个属性定义。以下是属性定义的例子：
 
 ```css
-/* some selector */ {
+/* some selector */
+ {
   background: #f1f1f1;
   color: #333;
 }
@@ -55,11 +56,14 @@
 
 ```css
 /* bad */
-.avatar{
-    border-radius:50%;
-    border:2px solid white; }
-.no, .nope, .not_good {
-    // ...
+.avatar {
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.no,
+.nope,
+.not_good {
+  // ...
 }
 #lol-no {
   // ...
@@ -95,7 +99,7 @@
 - 可以减少嵌套，降低特定性。
 - 可以帮助我们创建出可扩展的样式表。
 
-**OOCSS**，也就是 “Object Oriented CSS（面向对象的CSS）”，是一种写 CSS 的方法，其思想就是鼓励你把样式表看作“对象”的集合：创建可重用性、可重复性的代码段让你可以在整个网站中多次使用。
+**OOCSS**，也就是 “Object Oriented CSS（面向对象的 CSS）”，是一种写 CSS 的方法，其思想就是鼓励你把样式表看作“对象”的集合：创建可重用性、可重复性的代码段让你可以在整个网站中多次使用。
 
 参考资料：
 
@@ -176,11 +180,11 @@
    首先列出除去 `@include` 和嵌套选择器之外的所有属性声明。
 
    ```css
-    .btn-green {
-      background: green;
-      font-weight: bold;
-      // ...
-    }
+   .btn-green {
+     background: green;
+     font-weight: bold;
+     // ...
+   }
    ```
 
 2. `@include` 声明
@@ -188,12 +192,12 @@
    紧随后面的是 `@include`，这样可以使得整个选择器的可读性更高。
 
    ```css
-    .btn-green {
-      background: green;
-      font-weight: bold;
-      @include transition(background 0.5s ease);
-      // ...
-    }
+   .btn-green {
+     background: green;
+     font-weight: bold;
+     @include transition(background 0.5s ease);
+     // ...
+   }
    ```
 
 3. 嵌套选择器
@@ -201,15 +205,15 @@
    *如果有必要*用到嵌套选择器，把它们放到最后，在规则声明和嵌套选择器之间要加上空白，相邻嵌套选择器之间也要加上空白。嵌套选择器中的内容也要遵循上述指引。
 
    ```css
-    .btn {
-      background: green;
-      font-weight: bold;
-      @include transition(background 0.5s ease);
-   
-      .icon {
-        margin-right: 10px;
-      }
-    }
+   .btn {
+     background: green;
+     font-weight: bold;
+     @include transition(background 0.5s ease);
+
+     .icon {
+       margin-right: 10px;
+     }
+   }
    ```
 
 ##### 变量
@@ -240,8 +244,8 @@
 
 当遇到以上情况的时候，你也许是这样写 CSS 的：
 
-- 与 HTML 强耦合的（也是脆弱的）*—或者—*
-- 过于具体（强大）*—或者—*
+- 与 HTML 强耦合的（也是脆弱的）_—或者—_
+- 过于具体（强大）_—或者—_
 - 没有重用
 
 再说一遍: **永远不要嵌套 ID 选择器！**
