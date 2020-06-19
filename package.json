@@ -1,0 +1,23 @@
+{
+  "name": "fe-knowledge-software",
+  "version": "1.0.0",
+  "description": "前端开发软件",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@fineliving.github.com:fineliving/fe-knowledge-software.git"
+  },
+  "keywords": [
+    "编辑器和IDE",
+    "调试工具",
+    "切图"
+  ],
+  "author": "liyang",
+  "license": "ISC"
+}
